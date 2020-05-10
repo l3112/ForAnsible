@@ -1,0 +1,19 @@
+---
+name: "Mass Update"
+hosts: routers
+
+tasks:
+  - name: update the ios
+    debug:
+    msg: "the ios version is about to be updated"
+
+  - name: reboot
+  - msg: "rebooting"
+
+name: "What do people do"
+hosts: routers
+
+tasks:
+  - name: Check installation
+    debug:
+    msg: "All good."
